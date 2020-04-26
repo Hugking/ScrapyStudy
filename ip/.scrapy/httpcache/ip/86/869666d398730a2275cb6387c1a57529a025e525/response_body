@@ -1,0 +1,7 @@
+# robots.txt by mimvp.com
+User-agent: *
+Disallow: 
+Disallow: /usercenter/
+Disallow: /sadmin/
+Sitemap: https://proxy.mimvp.com/sitemap.xml
+Sitemap: https://proxy.mimvp.com/sitemap.html
