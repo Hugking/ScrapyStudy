@@ -3,12 +3,12 @@
 # Define here the models for your spider middleware
 #
 # See documentation in:
-# https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+# https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
 
 
-class IpSpiderMiddleware(object):
+class BaseSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -39,7 +39,7 @@ class IpSpiderMiddleware(object):
         # Called when a spider or process_spider_input() method
         # (from other spider middleware) raises an exception.
 
-        # Should return either None or an iterable of Response, dict
+        # Should return either None or an iterable of Request, dict
         # or Item objects.
         pass
 
@@ -56,7 +56,7 @@ class IpSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class IpDownloaderMiddleware(object):
+class DevSpiderDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
